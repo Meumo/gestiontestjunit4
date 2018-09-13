@@ -5,6 +5,7 @@ public class Operations {
 	
 	
 	public long addition(long...nombre){
+		System.out.println("test sonar");
 		long resultat = 0;
 		for(long i : nombre)
 			resultat+=i;

@@ -17,22 +17,22 @@ public class OperationsTest {
 	public void init(){
 		
 //		op = new Operations();
-		 System.out.println("Méthode à lancer avant chaque test.");
+		 System.out.println("Méthode à lancer avant chaque test");
 	}
 	
 	@After
 	public void testAfter(){
-		System.out.println("Méthode à lancer aprés chaque test.");
+		System.out.println("Méthode à lancer aprés chaque test");
 	}
 	
 	@AfterClass
 	public static void testAfterClass(){
-		System.out.println("Méthode à lancer aprés le test.");
+		System.out.println("Méthode à lancer aprés le test");
 	}
 	
 	@BeforeClass
 	public static void creerInstance(){
-		System.out.println("Méthode à lancer avant l'execution des tests.");
+		System.out.println("Méthode à lancer avant l'execution des tests");
 		op = new Operations();
 	}
 	
