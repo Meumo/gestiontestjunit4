@@ -2,8 +2,6 @@ package gestiontestjunit4;
 
 import static org.junit.Assert.*;
 
-import java.util.logging.Logger;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,8 +15,7 @@ public class DivisionTest {
 	@BeforeClass
 	public static void avantTest(){
 		div = new Division();
-		logger = null;
-		logger.log(null, "La méthode sera lancé avant le test.");
+		System.out.println("La méthode sera lancé avant le test.");
 		
 	}
 	@AfterClass
@@ -27,16 +24,15 @@ public class DivisionTest {
 	}
 	@Before
 	public void avantChaqTest(){
-		logger.log(null,"La méthode sera lancé avant chaque test.");
+		System.out.println("La méthode sera lancé avant chaque test.");
 	}
 	
 	@After
 	public void apresChaqTest(){
-		logger.log(null,"La méthode sera lancé apres chaque test.");
+		System.out.println("La méthode sera lancé apres chaque test.");
 	}
 	
 	long resultat;
-	private static Logger logger;
 	@Test
 	public void testDivision() {
 		resultat = div.division(8,2);
