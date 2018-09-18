@@ -1,6 +1,6 @@
 package gestiontestjunit4;
 
-import static org.junit.Assert.*;
+import java.lang.System.Logger;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -11,28 +11,30 @@ import org.junit.Test;
 
 public class OperationsTest {
 	static Operations op;
+	private static Logger logger;
 	
 	
 	@Before
 	public void init(){
 		
-//		op = new Operations();
-		 System.out.println("Méthode à lancer avant chaque test");
+		logger = null;
+		//		op = new Operations();
+		logger.log(null,"Méthode à lancer avant chaque test");
 	}
 	
 	@After
 	public void testAfter(){
-		System.out.println("Méthode à lancer aprés chaque test");
+		logger.log(null,"Méthode à lancer aprés chaque test");
 	}
 	
 	@AfterClass
 	public static void testAfterClass(){
-		System.out.println("Méthode à lancer aprés le test");
+		logger.log(null,"Méthode à lancer aprés le test");
 	}
 	
 	@BeforeClass
 	public static void creerInstance(){
-		System.out.println("Méthode à lancer avant l'execution des tests");
+		logger.log(null,"Méthode à lancer avant l'execution des tests");
 		op = new Operations();
 	}
 	

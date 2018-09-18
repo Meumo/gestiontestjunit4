@@ -1,11 +1,19 @@
 package gestiontestjunit4;
 
+import java.lang.System.Logger;
+
 public class Operations {
 	
 	
 	
+	private Logger logger;
+
+
+
 	public long addition(long...nombre){
-		System.out.println("test sonar");
+		logger = null;
+		//System.out.println("test sonar");
+		logger.log(null, "Test Sonar");
 		long resultat = 0;
 		for(long i : nombre)
 			resultat+=i;
