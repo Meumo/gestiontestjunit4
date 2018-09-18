@@ -5,9 +5,7 @@ import java.util.logging.Logger;
 public class Operations {
 	
 	
-	
 	public long addition(long...nombre){
-		//System.out.println("test sonar");
 		Logger logger= Logger.getLogger("Test Sonar");
 
 		long resultat = 0;

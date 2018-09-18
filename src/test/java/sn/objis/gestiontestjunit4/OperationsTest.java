@@ -16,7 +16,6 @@ public class OperationsTest {
 	@Before
 	public void init(){
 		
-//		op = new Operations();
 		 System.out.println("Méthode à lancer avant chaque test");
 	}
 	
