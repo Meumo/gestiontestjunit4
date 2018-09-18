@@ -1,4 +1,4 @@
-package gestiontestjunit4;
+package sn.objis.gestiontestjunit4;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -6,6 +6,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import sn.objis.gestiontestjunit4.Operations;
 
 public class OperationsTest {
 	static Operations op;

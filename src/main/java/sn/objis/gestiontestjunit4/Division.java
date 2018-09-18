@@ -1,4 +1,4 @@
-package gestiontestjunit4;
+package sn.objis.gestiontestjunit4;
 
 public class Division extends Operations{
 	
