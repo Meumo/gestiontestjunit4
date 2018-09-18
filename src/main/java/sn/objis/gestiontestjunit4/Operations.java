@@ -4,9 +4,9 @@ import java.util.logging.Logger;
 
 public class Operations {
 	
-	
+	Logger logger;
 	public long addition(long...nombre){
-		Logger logger= Logger.getLogger("Test Sonar");
+		 logger= Logger.getLogger("Test Sonar");
 
 		long resultat = 0;
 		for(long i : nombre)
